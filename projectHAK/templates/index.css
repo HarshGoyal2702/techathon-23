@@ -1,0 +1,20 @@
+.container{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+h2 .hello{
+    text-decoration: wavy;
+    color: black;
+    font-family: sans-serif;
+}
+input{
+    border: 1px solid #000;
+    border-radius: 10px;
+
+}

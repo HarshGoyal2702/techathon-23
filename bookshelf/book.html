@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Animation</title>
+<link rel="stylesheet" href="book.css" class="css">
+<script src="https://kit.fontawesome.com/1cad54f882.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="caption">
+        <p>Read the book cleverly</p>
+    </div>
+    <input type="checkbox" id="checkbox-cover">
+    <input type="checkbox" id="checkbox-page1">
+    <input type="checkbox" id="checkbox-page2">
+    <input type="checkbox" id="checkbox-page3">
+    <div class="book">
+        <div class="cover">
+            <label for="checkbox-cover"></label>
+        </div>
+        <div class="page" id="page1">
+            <div class="front-page">
+                <p>This is the first page of the book to learn the concepts of the HTML that is "Hyper Text Markup Language" to built the structure of the webpage </p>
+                <label class="next" for="checkbox-page1"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+                <img src="page2.jpg">
+                <label class="prev" for="checkbox-page1"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="page" id="page2">
+            <div class="front-page">
+                <h2>Page 2</h2>
+                <p>The Journey is still Continue you will reach your desination to learn the HTML concepts clearly so you can participate in the techathon Event and </p>
+                <label class="next" for="checkbox-page2"><i class="fas fa-chevron-right"></i></label>
+            </div>
+            <div class="back-page">
+                <img src="page4.jpg">
+                <label class="prev" for="checkbox-page2"><i class="fas fa-chevron-left"></i></label>
+            </div>
+        </div>
+        <div class="page" id="page3">
+            <div class="front-page">
+                <h2>Page 3</h2>
+                <p>You Rock the entire audience with the presentable idea!
+                    hope you like it and thanks 
+                </p>
+            </div>
+        </div>
+        <div class="back-cover"></div>
+    </div>
+</body>
+</html>

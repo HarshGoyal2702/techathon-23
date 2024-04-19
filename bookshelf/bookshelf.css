@@ -1,0 +1,290 @@
+/* :root {
+    --spine-pyramid: linear-gradient(
+      315deg,
+      transparent 75%,
+      rgba(255, 255, 255, 0.1) 0
+      ),
+      linear-gradient(
+        45deg,
+         transparent 75%,
+          rgba(255, 255, 255, 0.1) 0
+      ),
+      linear-gradient(
+        135deg,
+        rgba(255, 255, 255, 0.2) 166px,
+        transparent 0
+      ),
+      linear-gradient(
+        45deg,
+        rgba(0, 0, 0, 0.1) 75%,
+        transparent 0
+      );
+      background-size: 20px 20px;
+    --spine-stairs: repeating-linear-gradient(
+        63deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 3px,
+        transparent 0
+      ),
+      linear-gradient(
+        127deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 90px,
+        transparent 55%,
+        transparent 0
+      ),
+      linear-gradient(
+        transparent 51%,
+        rgba(0, 0, 0, 0.1) 170px
+      );
+      background-size: 70px 120px;
+    --spine-argyle: repeating-linear-gradient(
+        120deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px,
+        transparent 60px
+      ),
+      repeating-linear-gradient(
+        60deg,
+        rgba(255, 255, 255, 0.1),
+        rgba(255, 255, 255, 0.1) 1px,
+        transparent 1px,
+        transparent 60px
+      ),
+      linear-gradient(
+        60deg,
+        rgba(0, 0, 0, 0.1) 25%,
+        transparent 25%,
+        transparent 75%,
+        rgba(0, 0, 0, 0.1) 75%,
+        rgba(0, 0, 0, 0.1)
+      ),
+      linear-gradient(
+        120deg,
+        rgba(0, 0, 0, 0.1) 25%,
+        transparent 25%,
+        transparent 75%,
+        rgba(0, 0, 0, 0.1) 75%,
+        rgba(0, 0, 0, 0.1)
+      );
+    background-size: 70px 120px;
+    --spine-tartan: repeating-linear-gradient(
+        transparent,
+        transparent 50px,
+        rgba(0, 0, 0, 0.4) 50px,
+        rgba(0, 0, 0, 0.4) 53px,
+        transparent 53px,
+        transparent 63px,
+        rgba(0, 0, 0, 0.4) 63px,
+        rgba(0, 0, 0, 0.4) 66px,
+        transparent 66px,
+        transparent 116px,
+        rgba(0, 0, 0, 0.5) 116px,
+        rgba(0, 0, 0, 0.5) 166px,
+        rgba(255, 255, 255, 0.2) 166px,
+        rgba(255, 255, 255, 0.2) 169px,
+        rgba(0, 0, 0, 0.5) 169px,
+        rgba(0, 0, 0, 0.5) 179px,
+        rgba(255, 255, 255, 0.2) 179px,
+        rgba(255, 255, 255, 0.2) 182px,
+        rgba(0, 0, 0, 0.5) 182px,
+        rgba(0, 0, 0, 0.5) 232px,
+        transparent 232px
+      ),
+      repeating-linear-gradient(
+        270deg,
+        transparent,
+        transparent 50px,
+        rgba(0, 0, 0, 0.4) 50px,
+        rgba(0, 0, 0, 0.4) 53px,
+        transparent 53px,
+        transparent 63px,
+        rgba(0, 0, 0, 0.4) 63px,
+        rgba(0, 0, 0, 0.4) 66px,
+        transparent 66px,
+        transparent 116px,
+        rgba(0, 0, 0, 0.5) 116px,
+        rgba(0, 0, 0, 0.5) 166px,
+        rgba(255, 255, 255, 0.2) 166px,
+        rgba(255, 255, 255, 0.2) 169px,
+        rgba(0, 0, 0, 0.5) 169px,
+        rgba(0, 0, 0, 0.5) 179px,
+        rgba(255, 255, 255, 0.2) 179px,
+        rgba(255, 255, 255, 0.2) 182px,
+        rgba(0, 0, 0, 0.5) 182px,
+        rgba(0, 0, 0, 0.5) 232px,
+        transparent 232px
+      ),
+      repeating-linear-gradient(
+        125deg,
+        transparent,
+        transparent 2px,
+        rgba(0, 0, 0, 0.2) 2px,
+        rgba(0, 0, 0, 0.2) 3px,
+        transparent 3px,
+        transparent 5px,
+        rgba(0, 0, 0, 0.2) 5px
+      );
+  } */
+  :root{
+    --bgcolor : #efeff3;
+
+  }
+  *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body{
+    display: flex;
+    align-items: center;
+    justify-items: center;
+    flex-direction: column;
+    margin-top: 60px;
+    background: rgb(215, 216, 216);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .layer{
+    display: flex;
+    width: 60rem;
+    height: auto;
+    background: 	rgb(224, 224, 224);
+    border: 6px solid 	#efeff3 ;
+    border-radius: 10px;
+    box-shadow:5px 3px 16px black;
+  }
+  .all{
+    /* margin-top: 10px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 10px solid ;
+    border-color: var(--bgcolor);
+    border-radius: 18px;
+   /*  margin-left: 20px; */
+    /* margin-left: 100px; */
+    padding: 10px;
+    justify-content: space-evenly;
+    background: linear-gradient(#E1C16E,#CD7F32);
+    
+  }
+  .bookshelf {
+    width: 20px;
+    /* margin-top: 32px; */
+     display: flex; 
+    flex-wrap: wrap; 
+    margin-right: 32px;
+  }
+  #red{
+    background-color: linen;
+  }
+  #blue{
+    background-color: rgb(12, 74, 115)
+  }
+  #black{
+    background-color: rgb(49, 47, 47);
+  }
+  #brown{
+    background-color: rgb(125, 40, 40);
+  }
+  #aqua{
+    background-color: rgb(53, 206, 206);
+  }
+  
+  .book {
+    width: 50px;
+    height: 280px;
+    position: relative;
+    margin-left: 1px;
+    transform-style: preserve-3d;
+    transform: translateZ(0) rotateY(0);
+    transition: transform 1s;
+    background-color: #0c6f43;
+  }
+  
+  .side {
+    position: absolute;
+    border: 2px solid black;
+    border-radius: 3px;
+    font-weight: bold;
+    color: black;
+    text-align: center;
+    transform-origin: center left;
+  }
+  
+  .spine {
+    position: relative;
+    width: 50px;
+    height: 280px;
+    /* Patterns from: https://projects.verou.me/css3patterns/ */
+    background-image: var(--tartan);
+    transform: rotateY(0deg) translateZ(0px);
+  }
+  
+  .spine-title {
+    margin: 2px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(171, 167, 167);
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+  }
+  #title{
+    color: rgb(6, 6, 6);
+  }
+  #title2{
+    /* color: rgb(20, 20, 85); */
+    color:  rgb(6, 6, 6);
+   /*  color: red; */
+  }
+  #title3{
+    color: black;
+  }
+  
+  .spine-author {
+    position: absolute;
+    color: goldenrod;
+    bottom: 0px;
+    left: 20%; /* no idea why 20% centers it */
+  }
+  
+  .top {
+    width: 50px;
+    height: 190px;
+    top: -2px;  /* hmm, why -2 and not 0? */
+    background-image: linear-gradient(90deg, white 90%, gray 10%);
+    background-size: 5px 5px;
+    transform: rotateX(90deg) translateZ(95px) translateY(-95px);
+  }
+  
+  .cover {
+    width: 190px;
+    height: 280px;
+    top: 0px;
+    background-image: url("https://picsum.photos/190/280");
+    background-size: contain;
+    background-repeat: round;
+    left: 50px;
+    transform: rotateY(90deg) translateZ(0);
+    transition: transform 1s;
+  }
+  
+  .book:hover {
+    z-index: 1;
+    transform: rotateX(-25deg) rotateY(-40deg) rotateZ(-15deg) translateY(50px)
+      translateX(-30px);
+  }
+  
+
+.team{
+  font-size: 5rem;
+  margin-bottom: 12px;
+  text-decoration: underline red;
+  text-shadow:1px 1px 3px #35dc2f;
+}
